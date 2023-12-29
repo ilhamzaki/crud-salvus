@@ -86,7 +86,7 @@ function App() {
   return (
     <>
       {contextHolder} {/* Message Container */}
-      <div className="container max-h-[100vh] px-0 lg:px-[15rem]">
+      <div className="container h-[100vh] px-0 xl:px-[15rem]">
         <div className="py-[3rem] flex justify-between ">
           <h1 className="text-2xl sm:text-4xl">👨🏻‍💼 Employee 👩🏻‍💼</h1>
         </div>
@@ -95,7 +95,7 @@ function App() {
             <PlusOutlined /> Add Employee
           </Button>
         </div>
-        <div>
+        <div className="overflow-x-scroll lg:overflow-auto">
           <Table
             columns={columnsTableEmployee(showModalEdit, showPropsConfirm)}
             dataSource={usersData}
